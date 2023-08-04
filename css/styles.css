@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+}
+
+aside {
+    background-color: #212933;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons-aside {
+    width: 25px ;
+    padding: 7px 0;
+ 
+}
+
+
+
+.contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+    /*
+    justify-content: space-between;
+    width: 25%;   
+}
+*/
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.contact article {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+header main {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;  
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;   
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+body>main {
+    background-image: url("../assets/images/ben-o-bro-wpU4veNGnHg-unsplash.webp");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;       
+}
+
+h2 {
+    font-size: 35px;
+}
+
+main {
+    position: relative;  
+}
+
+body>main>*:not(div) {
+    margin: 15px;
+    color: white;
+    text-shadow: black 2px 2px 1px; 
+    z-index: 1;
+}
+
+body>main>div {
+   background-color: black;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   filter: opacity(0.5);
+   margin: 0px;
+}
+
+.blue {
+    background-color: #1CBFED;
+    color: white;
+    padding: 10px 20px;
+}
+
+body>section {
+    display: flex;
+    padding: 10px 20% 10px 20%;
+    gap: 15px;
+    text-align: center;
+}
+
+
+body>section>a {
+    width: calc(100%/3);
+    text-decoration: none;
+}
+
+
+body>section>a>article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    gap: 20px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    
+}
+
+body>section>a>article:hover {
+    background-color: #01BDED;
+    color: white;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1020px){
+
+    header main {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        
+    } 
+    
+    body>section {
+        flex-direction: column;
+    }
+
+    body>section>a {
+        width: 100%;       
+    }
+}
+    
+
+
+
+
